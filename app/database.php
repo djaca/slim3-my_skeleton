@@ -1,4 +1,9 @@
 <?php
+
+    /***********************************************************/
+    /*                  Database Connection                    */
+    /***********************************************************/
+
     use Illuminate\Database\Capsule\Manager as Capsule;
 
     $capsule = new Capsule();
