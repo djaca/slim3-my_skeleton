@@ -8,6 +8,7 @@
 
     session_start();
 
+    //  Rename .env.example to .env
     $dotenv = new Dotenv\Dotenv(__DIR__ . '/..');
     $dotenv->load();
 
