@@ -45,3 +45,12 @@
         $logger->pushHandler(new Monolog\Handler\StreamHandler($settings['logger']['path'], Monolog\Logger::DEBUG));
         return $logger;
     };
+
+    /***********************************************************/
+    /* Controller factories
+    /***********************************************************/
+
+    // HomeController
+    $container[App\Controller\HomeController::class] = function ($c) {
+        return new App\Controller\HomeController($c->get('view'), $c->get('logger'), $c->get('db'));
+    };
