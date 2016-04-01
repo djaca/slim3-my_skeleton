@@ -21,7 +21,8 @@
       "vlucas/phpdotenv": "2.2.*"
     },
     "require-dev": {
-      "zeuxisoo/slim-whoops": "0.5.*"
+      "zeuxisoo/slim-whoops": "0.5.*",
+      "symfony/var-dumper": "3.0.*"
     },
     "autoload": {
       "psr-4": {
